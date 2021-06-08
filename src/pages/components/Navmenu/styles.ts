@@ -11,8 +11,16 @@ export const Nav = styled.nav`
   position: fixed;
   z-index: 18;
   div.logo {
-    svg {
-      width: 80px;
+    a {
+      span {
+        height: 100%;
+        display: flex;
+        align-items: center;
+      }
+      svg {
+        height: 100%;
+        padding: 5px 0;
+      }
     }
   }
   @media (max-width: 768px) {
@@ -21,6 +29,16 @@ export const Nav = styled.nav`
       flex: 1;
       justify-content: center;
       margin-right: 20px;
+      a {
+        span {
+          display: flex;
+          height: 100%;
+        }
+        svg {
+        height: 100%;
+        padding: 5px 0;
+      }
+      }
     }
   }
 `
@@ -70,7 +88,7 @@ export const Ul = styled.ul`
     margin-left: 20px;
     a {
       font-family: 'Nunito', sans-serif;
-      color: ${props => props.theme.colors.gray50};
+      color: ${props => props.theme.colors.gray700};
       svg {
         display: none;
       }
@@ -98,9 +116,9 @@ export const Ul = styled.ul`
           margin-right: 25px;
           display: block;
         }
-      :hover{
-        filter: brightness(0.8);
-      }
+        :hover {
+          filter: brightness(0.8);
+        }
       }
     }
   }
