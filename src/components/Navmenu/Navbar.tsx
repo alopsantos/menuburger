@@ -2,7 +2,7 @@ import React from 'react'
 
 import Burger from './Burger'
 import { Nav } from './styles'
-import Logo from '../../../assets/logo.svg'
+import Logo from '../../assets/logo.svg'
 
 const Navbar: React.FC = () => {
   return (
