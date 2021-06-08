@@ -87,7 +87,7 @@ export const Ul = styled.ul`
     padding: 18px 10px;
     margin-left: 20px;
     a {
-      font-family: 'Nunito', sans-serif;
+      font-family: 'Archive', sans-serif;
       color: ${props => props.theme.colors.gray700};
       svg {
         display: none;

@@ -13,11 +13,9 @@ export default createGlobalStyle`
       props.theme.colors.gradienteA}, ${props =>
   props.theme.colors.gradienteB} );
     color: ${props => props.theme.colors.black300};
-    font: 400 16px 'Roboto', sans-serif;
   }
 
   body, input, button {
-    font-family: 'Roboto', sans-serif;
     font-size: 16px;
   }
 
