@@ -3,7 +3,10 @@ import { FiFacebook, FiInstagram, FiMapPin, FiPhoneCall } from 'react-icons/fi'
 
 import { Ul } from './styles'
 
-const RightNav: React.FC = ({ open }: any) => {
+interface IMenu {
+  open: boolean
+}
+const RightNav: React.FC<IMenu> = ({ open }: IMenu) => {
   return (
     <Ul open={open}>
       <li>

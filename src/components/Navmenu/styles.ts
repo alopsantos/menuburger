@@ -1,5 +1,8 @@
 import styled from 'styled-components'
 
+type PropType = {
+  open?: boolean
+}
 export const Nav = styled.nav`
   width: 100%;
   height: 75px;
@@ -42,7 +45,7 @@ export const Nav = styled.nav`
     }
   }
 `
-export const Burgerdiv = styled.div`
+export const Burgerdiv = styled.div.attrs((props: PropType) =>({}))<PropType>`
   width: 2rem;
   height: 2rem;
   position: fixed;
@@ -78,7 +81,7 @@ export const Burgerdiv = styled.div`
   }
 `
 
-export const Ul = styled.ul`
+export const Ul = styled.ul.attrs((props: PropType) =>({}))<PropType>`
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
@@ -123,7 +126,7 @@ export const Ul = styled.ul`
     }
   }
 `
-export const Overlay = styled.div`
+export const Overlay = styled.div.attrs((props: PropType) =>({}))<PropType>`
   visibility: ${({ open }) => (open ? 'visible' : 'hidden')};
   position: fixed;
   top: 0;
@@ -132,4 +135,5 @@ export const Overlay = styled.div`
   right: 0;
   z-index: 16;
   background: ${props => props.theme.colors.blackO50};
+  transition: visibility 0.3s ease-in-out;
 `
